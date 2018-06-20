@@ -1,0 +1,8 @@
+alter table question_answers add foreign key (answer_id) references answers(id);
+alter table question_answers add foreign key (question_id) references questions(id);
+
+alter table question_categorys add foreign key (category_id) references categorys(id);
+alter table question_categorys add foreign key (question_id) references questions(id);
+
+alter table answer_categorys add foreign key (category_id) references categorys(id);
+alter table answer_categorys add foreign key (answer_id) references answers(id);
